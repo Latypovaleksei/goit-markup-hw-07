@@ -1,0 +1,118 @@
+#active-page {
+  color: var(--active-color);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background: var(--active-color);
+  }
+}
+
+.header {
+  border-bottom: 1px solid var(--border-bottom);
+  & a {
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+
+  & a {
+    color: var(--main-text-color);
+    transition-property: color;
+    @extend %transition;
+  }
+}
+
+.navigation-item {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  & a:hover,
+  & a:focus {
+    color: var(--active-color);
+  }
+}
+
+.contact-link {
+  transition-property: color;
+  @extend %transition;
+
+  &:hover,
+  &:focus {
+    color: var(--active-color);
+  }
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+
+  & a {
+    display: flex;
+    align-items: center;
+    color: var(--second-color);
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.icon-mail,
+.icon-phone {
+  fill: var(--second-color);
+  transition-property: fill;
+  margin-right: 10px;
+  @extend %transition;
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+
+  .contact-link:hover &,
+  .contact-link:focus & {
+    fill: var(--active-color);
+  }
+}
+
+.icon-phone {
+  width: 10px;
+  height: 16px;
+
+  .contact-link:hover &,
+  .contact-link:focus & {
+    fill: var(--active-color);
+  }
+}

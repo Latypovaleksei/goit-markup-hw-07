@@ -1,0 +1,47 @@
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  .section-features & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer & {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+
+  .header & {
+    display: flex;
+    align-items: center;
+  }
+
+  .section-hero & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-our-team & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-portfolio & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-what-are-we-doing & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
