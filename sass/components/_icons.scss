@@ -1,0 +1,5 @@
+@import '../utils/transition';
+
+.icon--animation {
+  @include transition(fill);
+}

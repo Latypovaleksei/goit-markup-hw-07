@@ -1,0 +1,12 @@
+@import '../utils/variables';
+
+.page-header {
+  border-bottom: map-get($border, 'header');
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}

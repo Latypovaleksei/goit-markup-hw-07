@@ -1,0 +1,35 @@
+.filters__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filters__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filters__button {
+  background-color: var(--third-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-style: unset;
+  border-radius: 4px;
+  color: var(--main-text-color);
+
+  padding: 6px 22px;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation-timing-function);
+}
+
+.filters__button:hover,
+.filters__button:focus {
+  cursor: pointer;
+  background-color: var(--highlighting-color);
+  color: var(--main-color);
+  box-shadow: var(--shadow-bt-filter);
+}

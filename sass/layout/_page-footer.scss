@@ -1,0 +1,17 @@
+.page-footer {
+  background-color: var(--secondary-background-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo-adds-box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
