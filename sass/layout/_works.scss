@@ -1,87 +1,86 @@
-.works__list {
+@import '../utils/variables';
+@import '../utils/transition';
+
+.works {
   display: flex;
   flex-wrap: wrap;
 
-  margin-right: calc(-1 * var(--works-item-gap));
-  margin-bottom: calc(-1 * var(--works-item-gap));
-}
+  margin-right: calc(-1 * #{map-get($gap, 'works-item')});
+  margin-bottom: calc(-1 * #{map-get($gap, 'works-item')});
 
-.works__item {
-  width: 370px;
-  flex-basis: calc(100% / 3 - var(--works-item-gap));
-  margin-right: var(--works-item-gap);
-  margin-bottom: var(--works-item-gap);
-}
+  &__item {
+    width: 370px;
+    flex-basis: calc(100% / 3 - #{map-get($gap, 'works-item')});
+    margin-right: map-get($gap, 'works-item');
+    margin-bottom: map-get($gap, 'works-item');
+  }
 
-.works__link {
-  display: block;
+  &__link {
+    display: block;
 
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: var(--animation-timing-function);
-}
+    @include transition(box-shadow);
 
-.works__viewbox {
-  position: relative;
-  overflow: hidden;
-}
+    &:hover,
+    &:focus {
+      box-shadow: map-get($shadow, 'works-link');
+    }
+  }
 
-.works__overlay {
-  position: absolute;
-  left: 0;
-  bottom: -100%;
+  &__viewbox {
+    position: relative;
+    overflow: hidden;
+  }
 
-  display: block;
-  width: 100%;
-  height: 100%;
+  &__overlay {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
 
-  background-color: var(--bg-overlay);
+    display: block;
+    width: 100%;
+    height: 100%;
 
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: var(--main-color);
-  padding: 63px 24px;
+    background-color: map-get($colors, 'bg-overlay');
 
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: var(--animation-timing-function);
-}
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: map-get($colors, 'main');
+    padding: 63px 24px;
 
-.works__link:hover,
-.works__link:focus {
-  box-shadow: var(--shadow-works-link);
-}
+    @include transition(transform);
 
-.works__link:hover .works__overlay,
-.works__link:focus .works__overlay {
-  transform: translateY(-100%);
-  opacity: 1;
-  visibility: visible;
-  pointer-events: visible;
-}
+    .works__link:hover &,
+    .works__link:focus & {
+      transform: translateY(-100%);
+      opacity: 1;
+      visibility: visible;
+      pointer-events: visible;
+    }
+  }
 
-.works__specification {
-  padding: 20px 24px;
-  border: var(--works-border);
-}
+  &__specification {
+    padding: 20px 24px;
+    border: map-get($border, 'works');
+  }
 
-.works__name-product {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--main-text-color);
+  &__name-product {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: map-get($colors, 'main-text');
 
-  margin-bottom: 4px;
-}
+    margin-bottom: 4px;
+  }
 
-.works__type-product {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  &__type-product {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: map-get($colors, 'secondary-text');
+  }
 }

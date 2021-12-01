@@ -1,10 +1,11 @@
-@import '../utils/variables';
-
 $property: (
   'fill': fill,
   'color': color,
   'background-color': background-color,
   'border-color': border-color,
+  'border': border,
+  'box-shadow': box-shadow,
+  'transform': transform,
 );
 
 @mixin transition($property) {

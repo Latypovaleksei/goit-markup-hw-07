@@ -10,4 +10,9 @@
     flex-direction: row;
     align-items: center;
   }
+
+  &__footer {
+    display: flex;
+    align-items: baseline;
+  }
 }

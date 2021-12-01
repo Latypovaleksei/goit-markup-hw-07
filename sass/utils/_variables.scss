@@ -9,50 +9,31 @@ $colors: (
   'cross': rgba(0, 0, 0, 1),
   'textarea-text': rgba(117, 117, 117, 0.5),
   'link-conditions': rgb(33, 150, 243),
+  'third-background': rgba(245, 244, 250, 1),
+  'bg-label': rgba(47, 48, 58, 0.8),
+  'icon': rgba(175, 177, 184, 1),
+  'footer-social-link-bg': rgba(255, 255, 255, 0.1),
+  'bg-overlay': rgba(33, 150, 243, 0.9),
+  'third-text': rgba(255, 255, 255, 0.6),
+  'bg-input': rgba(33, 150, 243, 0),
+  'secondary-bg': rgba(47, 48, 58, 1),
 );
 
 $border: (
   'header': 1px solid rgba(236, 236, 236, 1),
   'modalBtClose': rgba(0, 0, 0, 0.1),
+  'works': 1px solid #eeeeee,
 );
 
 $shadow: (
   'BtHero': 0px 4px 4px rgba(0, 0, 0, 0.15),
   'modal': 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+  'fotocard': 0px 1px 3px rgba(0, 0, 0, 0.12),
+  'bt-filter': 0px 3px 1px rgba(0, 0, 0, 0.1),
+  'works-link': 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+  'form': 0px 4px 4px 0px rgba(0, 0, 0, 0.15),
 );
 
-// :root {
-//   // --main-text-color: rgba(33, 33, 33, 1);
-//   // --secondary-text-color: rgba(117, 117, 117, 1);
-//   --third-text-color: rgba(255, 255, 255, 0.6);
-//   // --highlighting-color: rgba(33, 150, 243, 1);
-//   // --main-color: rgba(255, 255, 255, 1);
-//   // --secondary-background-color: rgba(47, 48, 58, 1);
-//   --third-background-color: rgba(245, 244, 250, 1);
-//   // --bt-hover: rgba(24, 140, 232, 1);
-//   // --header-border: 1px solid rgba(236, 236, 236, 1);
-//   --box-shadow-fotocard: 0px 1px 3px rgba(0, 0, 0, 0.12),
-//     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-//   // --shadow-bt-hero: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//   --shadow-bt-filter: 0px 3px 1px rgba(0, 0, 0, 0.1),
-//     0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-//   --works-border: 1px solid #eeeeee;
-//   --works-item-gap: 30px;
-//   --icon-color: rgba(175, 177, 184, 1);
-//   --footer-social-link-bg: rgba(255, 255, 255, 0.1);
-//   // --animation-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
-//   --backdrop: rgba(0, 0, 0, 0.2);
-//   --border-modal-bt-close: rgba(0, 0, 0, 0.1);
-//   --cross-color: rgba(0, 0, 0, 1);
-//   --modal-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-//     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-//   --bg-label: rgba(47, 48, 58, 0.8);
-//   --bg-overlay: rgba(33, 150, 243, 0.9);
-//   --shadow-works-link: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-//     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-//   --shadow-form: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-//   --bg-input-follow-us: rgba(33, 150, 243, 0);
-//   --border-input-follow-us: 1px solid rgba(255, 255, 255, 0.3);
-//   --textarea-text-color: rgba(117, 117, 117, 0.5);
-//   --link-conditions: rgb(33, 150, 243);
-// }
+$gap: (
+  'works-item': 30px,
+);

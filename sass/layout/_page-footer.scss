@@ -1,13 +1,10 @@
+@import '../utils/variables';
+
 .page-footer {
-  background-color: var(--secondary-background-color);
+  background-color: map-get($colors, 'secondary-bg');
 
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer-container {
-  display: flex;
-  align-items: baseline;
 }
 
 .logo-adds-box {

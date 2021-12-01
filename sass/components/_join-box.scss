@@ -1,10 +1,12 @@
+@import '../utils/variables';
+
 .join-box__text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-color);
+  color: map-get($colors, 'main');
 
   margin-bottom: 20px;
 }

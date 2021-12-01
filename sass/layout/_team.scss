@@ -1,45 +1,47 @@
-.team-section {
-  background-color: var(--third-background-color);
-}
+@import '../utils/variables';
 
-.team-section__list {
-  display: flex;
-}
+.team {
+  background-color: map-get($colors, 'third-background');
 
-.team-section__item {
-  width: 270px;
-  text-align: center;
+  &__list {
+    display: flex;
+  }
 
-  background-color: var(--main-color);
+  &__item {
+    width: 270px;
+    text-align: center;
 
-  box-shadow: var(--box-shadow-fotocard);
-  border-radius: 0px 0px 4px 4px;
-}
+    background-color: map-get($colors, 'main');
 
-.team-section__item:not(:last-child) {
-  margin-right: 30px;
-}
+    box-shadow: map-get($shadow, 'fotocard');
+    border-radius: 0px 0px 4px 4px;
 
-.team-section__box {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 
-.team-section__names {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
+  &__box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
-  margin-bottom: 10px;
-}
+  &__names {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
 
-.team-section__profession {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+    margin-bottom: 10px;
+  }
 
-  margin-bottom: 16px;
+  &__profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: map-get($colors, 'secondary-text');
+
+    margin-bottom: 16px;
+  }
 }

@@ -1,46 +1,46 @@
-.features-section {
-  padding-bottom: 0;
-}
+@import '../utils/variables';
 
-.features__list {
-  display: flex;
-}
+.features {
+  &__list {
+    display: flex;
+  }
 
-.features__item {
-  display: block;
-  width: 270px;
-}
+  &__item {
+    display: block;
+    width: 270px;
 
-.features__item:not(:last-child) {
-  margin-right: 30px;
-}
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 
-.features__box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
 
-  background-color: var(--third-background-color);
-  border-radius: 4px;
+    background-color: map-get($colors, 'third-background');
+    border-radius: 4px;
 
-  margin-bottom: 30px;
-}
+    margin-bottom: 30px;
+  }
 
-.features__icon {
-  width: 70px;
-  height: 70px;
-}
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
 
-.features__title-item {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-text-color);
+  &__title-item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
 
-  margin-bottom: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .features__text-item {
